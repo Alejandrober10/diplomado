@@ -1,0 +1,18 @@
+:root {
+    --colorPrimario: #0a9eee;
+    --colorSecundario: rgb(233, 230, 230);
+    --fuentePrimaria: 1rem;
+    --fuenteSecundaria: 0.5rem;
+}
+
+.titulo {
+    font-size: 1rem;
+}
+
+.contenedor {
+    background-color: var(--colorPrimario);
+}
+
+.titulo {
+    color: var(--colorSecundario);
+}
