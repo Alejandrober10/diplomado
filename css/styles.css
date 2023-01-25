@@ -1,18 +1,36 @@
-:root {
-    --colorPrimario: #0a9eee;
-    --colorSecundario: rgb(233, 230, 230);
-    --fuentePrimaria: 1rem;
-    --fuenteSecundaria: 0.5rem;
-}
-
-.titulo {
-    font-size: 1rem;
-}
-
-.contenedor {
-    background-color: var(--colorPrimario);
-}
-
-.titulo {
-    color: var(--colorSecundario);
-}
+                                 :root {
+                                    --colorPrimario: #0a9eee;
+                                    --colorSecundario: rgb(233, 230, 230);
+                                    --fuentePrimaria: 1rem;
+                                    --fuenteSecundaria: 0.5rem;
+                                }
+                                
+                                .titulo {
+                                    font-size: 1rem;
+                                }
+                                
+                                .contenedor {
+                                    border: 18px solid rgb(255 0 0 / 20%);
+                                    padding: 20px;
+                                    margin: auto;
+                                }
+                                
+                                .contenedor-titulo {
+                                    background-color: var(--colorPrimario);
+                                }
+                                
+                                .titulo {
+                                    color: var(--colorSecundario);
+                                }
+                                
+                                @media (max-width:1200px) {
+                                    .contenedor-titulo {
+                                        background-color: var(--colorSecundario);
+                                    }
+                                }
+                                
+                                .division {
+                                    display: grid;
+                                    grid-template-columns: repeat(3, 1fr);
+                                    column-gap: 20px;
+                                }
