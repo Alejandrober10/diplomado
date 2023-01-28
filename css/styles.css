@@ -1,41 +1,92 @@
          :root {
-            --colorPrimario: #0a9eee;
-            --colorSecundario: rgb(233, 230, 230);
-            --fuentePrimaria: 1rem;
-            --fuenteSecundaria: 0.5rem;
+             --colorPrimario: #0a9eee;
+             --colorSecundario: rgb(233, 230, 230);
+             --fuentePrimaria: 1rem;
+             --fuenteSecundaria: 0.5rem;
+         }
+
+         .titulo {
+             font-size: 1rem;
+         }
+
+         .contenedor {
+             border: 18px solid rgb(255 0 0 / 20%);
+             padding: 20px;
+             margin: auto;
+         }
+
+         .contenedor-titulo {
+             background-color: var(--colorPrimario);
+         }
+
+         .titulo {
+             color: var(--colorSecundario);
+         }
+
+         @media (max-width:1200px) {
+             .contenedor-titulo {
+                 background-color: var(--colorSecundario);
+             }
+         }
+
+         .division {
+             display: grid;
+             grid-template-columns: repeat(3, 1fr);
+             column-gap: 20px;
+             font-size: 20px;
+         }
+
+         .body-angel {
+             background-image: url("../img/angel_fondo.jpg");
+             background-size: cover;
+             background-repeat: no-repeat;
+             background-position: center;
+         }
+
+         .body-angel nav.navbar-angel {
+             background-color: #CE162A;
+         }
+
+         .body-angel nav .breadcrumb-item.active{
+            color: #fff;
+         }
+
+         .body-angel a {
+             color: #000;
+         }
+         .body-angel a:hover {
+            color: #fff;
         }
         
-        .titulo {
-            font-size: 1rem;
-        }
-        
-        .contenedor {
-            border: 18px solid rgb(255 0 0 / 20%);
-            padding: 20px;
-            margin: auto;
-        }
-        
-        .contenedor-titulo {
-            background-color: var(--colorPrimario);
-        }
-        
-        .titulo {
-            color: var(--colorSecundario);
-        }
-        
-        @media (max-width:1200px) {
-            .contenedor-titulo {
-                background-color: var(--colorSecundario);
-            }
-        }
-        
-        .division {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            column-gap: 20px;
-            font-size: 20px;
+        .body-angel .containter-angel {
+            padding-top: 4rem;
         }
 
-        .html {
-            background:#D13817;
+        .body-angel .containter-angel .main-body .text-cv-angel {   
+            color: #CE162A
+        }
+
+        .body-angel .containter-angel .main-body .progress-bar {
+            background-color: #CE162A;
+        }
+        
+
+        /* estilos javier */ 
+        .contenedor-rojo{
+            background-color: rgb(253, 0, 21);
+            
+            max-width: 1200px;
+            margin:auto;
+            height: 600px;
+        }
+
+        .contenedor-azul{
+
+            background-color: blue;
+            height: 1000px;
+            max-width: 1100px;
+            margin: auto;
+            margin-top: 200px;
+            
+
         }
